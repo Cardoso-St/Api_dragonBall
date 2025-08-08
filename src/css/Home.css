@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+}
+
+.main-content {
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    color: #f68e00;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0 0 10px #f68e00;
+}
+
+.summary {
+    font-size: 1.4rem;
+    color: #bbb;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 0 0 4px #222;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    flex-grow: 1;
+}
+
+/* CARD */
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    border: 2px solid #f68e00;
+    box-shadow: 0 4px 15px rgba(246, 142, 0, 0.3);
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(246, 142, 0, 0.7);
+}
+
+.card-img {
+    width: 100%;
+    max-height: 230px;
+    border-radius: 12px;
+    object-fit: contain;
+    margin-bottom: 1.6rem;
+    filter: drop-shadow(0 0 5px #f68e00);
+}
+
+.card-title {
+    font-size: 2rem;
+    color: #f68e00;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px #f68e00;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 0.4rem 0;
+    line-height: 1.4;
+    max-width: 100%;
+    text-align: center;
+}
+
+.card p strong {
+    color: #f68e00;
+    font-weight: 600;
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .summary {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

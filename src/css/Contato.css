@@ -1,0 +1,116 @@
+.ContainerContato {
+    max-width: 500px; /* reduzido */
+    margin: 4rem auto;
+    background-color: #1e1e1e;
+    padding: 2rem 1.5rem; /* reduzido */
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(246, 142, 0, 0.3);
+    border: 2px solid #f68e00;
+}
+
+.ContainerContato h2 {
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #f68e00;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #f68e00;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem; 
+    margin-bottom: 0.4rem;
+    color: #f68e00;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    background-color: #2c2c2c;
+    border: 2px solid #444;
+    border-radius: 8px; 
+    padding: 0.7rem 0.9rem; 
+    font-size: 0.95rem; 
+    color: #eee;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f68e00;
+    box-shadow: 0 0 8px #f68e00;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px; 
+}
+
+.input-error {
+    border-color: #ff4c4c;
+}
+
+.error-msg {
+    color: #ff4c4c;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.success-msg {
+    margin-top: 1.5rem;
+    background-color: #1e331e;
+    color: #4aff4a;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #4aff4a;
+    font-size: 0.95rem;
+}
+
+.btn-enviar {
+    background-color: #f68e00;
+    color: #0d0d0d;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background-color: #ff9e1f;
+    box-shadow: 0 0 15px #f68e00;
+}
+
+@media (max-width: 600px) {
+    .ContainerContato {
+        padding: 1.5rem 1rem;
+        max-width: 90%;
+    }
+
+    .ContainerContato h2 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    .btn-enviar {
+        font-size: 0.95rem;
+        padding: 0.6rem;
+    }
+}

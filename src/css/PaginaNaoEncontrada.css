@@ -1,0 +1,124 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+/* Goku fixo à esquerda */
+.goku {
+    width: 300px;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+}
+
+.kamehameha-ball {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    animation: shootKamehameha 2s linear infinite;
+    filter: drop-shadow(0 0 10px #f68e00);
+    z-index: 1;
+}
+
+.kamehameha-ball::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, #f68e00 0%, transparent 70%);
+    filter: blur(10px);
+    opacity: 0.7;
+}
+
+.textos {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.textos h1 {
+    font-size: 2rem;
+    color: #f68e00;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0 0 10px #f68e00;
+}
+
+.textos h3 {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #ccc;
+    text-shadow: 0 0 6px #f68e00;
+}
+
+
+/* Animação da bola */
+@keyframes shootKamehameha {
+    0% {
+        left: 15%;
+        opacity: 1;
+        filter: drop-shadow(0 0 10px #f68e00);
+    }
+
+    80% {
+        left: 95%;
+        opacity: 1;
+        filter: drop-shadow(0 0 20px #f68e00);
+    }
+
+    100% {
+        left: 110%;
+        opacity: 0;
+        filter: drop-shadow(0 0 40px #f68e00);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .goku {
+        width: 220px;
+    }
+
+    .textos h1 {
+        font-size: 2rem;
+    }
+
+    .textos h3 {
+        font-size: 1.1rem;
+    }
+
+    .kamehameha-ball {
+        width: 60px;
+    }
+}
