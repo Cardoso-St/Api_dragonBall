@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/PaginaNaoEncontrada.css";
-import gokuImg from "../assets/ImagemGoku.png";
-import ballImg from "../assets/simulacaoKamehame.png";
+import gokuImg from "../../assets/ImagemGoku.png";
+import ballImg from "../../assets/simulacaoKamehame.png";
 
 const PaginaNaoEncontrada = () => {
     const redirecionarParaHome = () => {
