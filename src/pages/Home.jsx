@@ -13,17 +13,17 @@ const personagens = [
     nome: "Caio",
     tipoMulher: "Cacheada",
     tamanho: "1,80m",
-    formacao: "Live NPC",
-    hobbie: "Amar",
+    formacao: "TI",
+    hobbie: "Vôlei",
     imagem: imagemCaio
   },
   {
     id: 2,
     nome: "Gabriel",
-    tipoMulher: "O que vier é lucro",
+    tipoMulher: "O que vier",
     tamanho: "1,80m",
-    formacao: "Top 1 do vaticano",
-    hobbie: "Falar o óbvio",
+    formacao: "TI",
+    hobbie: "Jogos",
     imagem: imagemGabriel,
   },
   {
@@ -31,8 +31,8 @@ const personagens = [
     nome: "Steven",
     tipoMulher: "Loira",       
     tamanho: "1,81m",
-    formacao: "Mentiras.senai",
-    hobbie: "Odiar Cólica/Taylor Swift",
+    formacao: "TI",
+    hobbie: "Musculação",
     imagem: imagemSteven,
   },
   {
@@ -40,17 +40,17 @@ const personagens = [
     nome: "Daniel.F",
     tipoMulher: "Todas",
     tamanho: "1,80m",
-    formacao: "Personal Trainer",
-    hobbie: "Inventar historia",
+    formacao: "TI",
+    hobbie: "Personal Trainer",
     imagem: imagemDaniel,
   },
   {
     id: 5,
     nome: "Daniel.G",
-    tipoMulher: "Filha de pastor",
+    tipoMulher: "Ruiva",
     tamanho: "1,71m",
-    formacao: "Diabeticação",
-    hobbie: "Correr contra glicose",
+    formacao: "TI",
+    hobbie: "Leitura",
     imagem: imagemDanielG,
   },
 ];
@@ -84,3 +84,4 @@ export default function Home() {
     </main>
   );
 }
+
